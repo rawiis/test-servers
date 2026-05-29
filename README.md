@@ -25,7 +25,7 @@ bash <(curl -Ls IP.Check.Place | sed '/^\s*show_ad\s*$/d') -l en
 ### Гео-тест (IP Region)
 Детальная проверка геолокации IP, включая определение региона в YouTube, Netflix и других стриминговых платформах:
 ```bash
-bash <(wget -qO- [https://github.com/Davoyan/ipregion/raw/main/ipregion.sh](https://github.com/Davoyan/ipregion/raw/main/ipregion.sh))
+bash <(wget -qO- https://github.com/Davoyan/ipregion/raw/main/ipregion.sh)
 ```
 
 ---
@@ -41,7 +41,7 @@ curl -sL yabs.sh | bash -s -- -4
 ### Bench.sh
 Классический скрипт для вывода базовых параметров системы (процессор, память, аптайм) и замера скорости загрузки до популярных зарубежных точек:
 ```bash
-wget -qO- bench.sh | bash
+wget -qO- bench.sh | bash 
 ```
 
 ---
@@ -57,7 +57,7 @@ wget -qO- bench.openode.xyz | bash
 ### Официальный Ookla Speedtest CLI
 Установка и запуск официальной консольной утилиты Speedtest от Ookla для ручного выбора серверов тестирования:
 ```bash
-wget [https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz](https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz) && \
-tar -xf ookla-speedtest-1.2.0-linux-x86_64.tgz && \
+wget https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz
+tar -xf ookla-speedtest-1.2.0-linux-x86_64.tgz
 ./speedtest
 ```
